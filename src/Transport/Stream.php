@@ -105,8 +105,8 @@ class Stream extends AbstractTransport
             // If authentication details are provided, add those as well
             if ($this->getOption('proxy.user') && $this->getOption('proxy.password')) {
                 $headers['Proxy-Authorization'] = 'Basic ' . base64_encode(
-                        $this->getOption('proxy.user') . ':' . $this->getOption('proxy.password')
-                    );
+                    $this->getOption('proxy.user') . ':' . $this->getOption('proxy.password')
+                );
             }
         }
 
